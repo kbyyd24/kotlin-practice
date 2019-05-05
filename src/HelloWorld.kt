@@ -3,12 +3,11 @@ import Color.*
 fun main() {
     println("Hello, Kotlin.")
     val a = 4
-    val b: Int = 3
-    println(max(a, b))
+    println(max(a))
     print(level(GREEN))
 }
 
-fun max(a: Int, b: Int) = if (a > b) a else b
+fun max(a: Int, b: Int = Int.MIN_VALUE) = if (a > b) a else b
 
 fun level(color: Color) = when (color) {
     RED -> "error"
