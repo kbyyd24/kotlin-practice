@@ -16,8 +16,8 @@ fun main() {
 
 fun objectOrientation() {
     val me = Auther("Yuexiang", "Chinese", "Programmer", "ThoughtWorks")
-    println("I'm ${me.name}, a ${me.rate}, a ${me.profession} working for ${me.company}.")
+    println(me.introduce())
 
     val anotherMe = createChinese("Yuexiang")
-    println("I'm ${anotherMe.name}, a ${anotherMe.rate}, a ${anotherMe.profession} working for ${anotherMe.company}.")
+    println(anotherMe.introduce())
 }
