@@ -1,5 +1,7 @@
 @file:JvmName("CommonUtil")
 
+package cn.gaoyuexiang.kotlin.practice
+
 fun max(a: Int, b: Int = Int.MIN_VALUE) = if (a > b) a else b
 
 fun level(color: Color) = when (color) {
